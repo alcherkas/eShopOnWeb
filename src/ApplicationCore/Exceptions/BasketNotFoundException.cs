@@ -8,10 +8,6 @@ namespace Microsoft.eShopWeb.ApplicationCore.Exceptions
         {
         }
 
-        protected BasketNotFoundException(System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context) : base(info, context)
-        {
-        }
-
         public BasketNotFoundException(string message) : base(message)
         {
         }

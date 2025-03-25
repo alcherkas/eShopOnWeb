@@ -198,7 +198,8 @@ namespace Microsoft.eShopWeb.Web
             {
                 app.UseDeveloperExceptionPage();
                 app.UseShowAllServicesMiddleware();
-                app.UseDatabaseErrorPage();
+                // UseDatabaseErrorPage is obsolete in .NET 8
+                // It's replaced by AddDatabaseDeveloperPageExceptionFilter in ConfigureServices
             }
             else
             {
