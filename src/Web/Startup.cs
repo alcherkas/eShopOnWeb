@@ -1,4 +1,4 @@
-﻿using Ardalis.ListStartupServices;
+using Ardalis.ListStartupServices;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
@@ -144,7 +144,6 @@ namespace Microsoft.eShopWeb.Web
                 if(existingUserManager == null)
                 {
                     services.AddIdentity<ApplicationUser, IdentityRole>()
-                        .AddDefaultUI()
                         .AddEntityFrameworkStores<AppIdentityDbContext>()
                                         .AddDefaultTokenProviders();
                 }
